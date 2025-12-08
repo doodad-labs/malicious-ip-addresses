@@ -16,3 +16,6 @@ Github | [`https://raw.githubusercontent.com/doodad-labs/malicious-ip-addresses/
 jsDelivr | [`https://cdn.jsdelivr.net/gh/doodad-labs/malicious-ip-addresses@main/data.json`](https://cdn.jsdelivr.net/gh/doodad-labs/malicious-ip-addresses@main/data.json)
 Statically | [`https://cdn.statically.io/gh/doodad-labs/malicious-ip-addresses/main/data.json`](https://cdn.statically.io/gh/doodad-labs/malicious-ip-addresses/main/data.json)
 GitHack | [`https://raw.githack.com/doodad-labs/malicious-ip-addresses/main/data.json`](https://raw.githack.com/doodad-labs/malicious-ip-addresses/main/data.json)
+
+<!-- DATA_COUNT_START -->
+<!-- DATA_COUNT_END -->
