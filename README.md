@@ -10,9 +10,9 @@ This list is provided as-is for informational and defensive security purposes. R
 
 ## Mirrors
 
-Provider | Link | Raw
---- | --- | ---
-Github | [Hyper Link](https://raw.githubusercontent.com/doodad-labs/malicious-ip-addresses/refs/heads/main/data.json) | `https://raw.githubusercontent.com/doodad-labs/malicious-ip-addresses/refs/heads/main/data.json`
-jsDelivr | [Hyper Link](https://cdn.jsdelivr.net/gh/doodad-labs/malicious-ip-addresses@main/data.json) | `https://cdn.jsdelivr.net/gh/doodad-labs/malicious-ip-addresses@main/data.json`
-Statically | [Hyper Link](https://cdn.statically.io/gh/doodad-labs/malicious-ip-addresses/main/data.json) | `https://cdn.statically.io/gh/doodad-labs/malicious-ip-addresses/main/data.json`
-GitHack | [Hyper Link](https://raw.githack.com/doodad-labs/malicious-ip-addresses/main/data.json) | `https://raw.githack.com/doodad-labs/malicious-ip-addresses/main/data.json`
+Provider | Link
+--- | ---
+Github | [`https://raw.githubusercontent.com/doodad-labs/malicious-ip-addresses/refs/heads/main/data.json`](https://raw.githubusercontent.com/doodad-labs/malicious-ip-addresses/refs/heads/main/data.json)
+jsDelivr | [`https://cdn.jsdelivr.net/gh/doodad-labs/malicious-ip-addresses@main/data.json`](https://cdn.jsdelivr.net/gh/doodad-labs/malicious-ip-addresses@main/data.json)
+Statically | [`https://cdn.statically.io/gh/doodad-labs/malicious-ip-addresses/main/data.json`](https://cdn.statically.io/gh/doodad-labs/malicious-ip-addresses/main/data.json)
+GitHack | [`https://raw.githack.com/doodad-labs/malicious-ip-addresses/main/data.json`](https://raw.githack.com/doodad-labs/malicious-ip-addresses/main/data.json)
