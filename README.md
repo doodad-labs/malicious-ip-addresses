@@ -12,6 +12,7 @@ This list is provided as-is for informational and defensive security purposes. R
 
 Provider | Link
 --- | ---
+DoodadLabs | [`https://threat.doodadlabs.org/mirror/malicious-ip-addresses.json`](https://threat.doodadlabs.org/mirror/malicious-ip-addresses.json)
 Github | [`https://raw.githubusercontent.com/doodad-labs/malicious-ip-addresses/refs/heads/main/data.json`](https://raw.githubusercontent.com/doodad-labs/malicious-ip-addresses/refs/heads/main/data.json)
 jsDelivr | [`https://cdn.jsdelivr.net/gh/doodad-labs/malicious-ip-addresses@main/data.json`](https://cdn.jsdelivr.net/gh/doodad-labs/malicious-ip-addresses@main/data.json)
 Statically | [`https://cdn.statically.io/gh/doodad-labs/malicious-ip-addresses/main/data.json`](https://cdn.statically.io/gh/doodad-labs/malicious-ip-addresses/main/data.json)
