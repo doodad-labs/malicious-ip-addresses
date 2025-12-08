@@ -7,3 +7,12 @@ The list is generated automatically by detection systems that monitor for attack
 IPs are added based on observed malicious activity including but not limited to: web application fuzzing, credential stuffing attempts, vulnerability scanning, distributed denial of service attacks, and exploitation attempts against known vulnerabilities.
 
 This list is provided as-is for informational and defensive security purposes. Regular updates are made as new malicious activity is detected.
+
+## Mirrors
+
+Provider | Link | Raw
+--- | --- | ---
+Github | [Hyper Link](https://raw.githubusercontent.com/doodad-labs/malicious-ip-addresses/refs/heads/main/data.json) | `https://raw.githubusercontent.com/doodad-labs/malicious-ip-addresses/refs/heads/main/data.json`
+jsDelivr | [Hyper Link](https://cdn.jsdelivr.net/gh/doodad-labs/malicious-ip-addresses@main/data.json) | `https://cdn.jsdelivr.net/gh/doodad-labs/malicious-ip-addresses@main/data.json`
+Statically | [Hyper Link](https://cdn.statically.io/gh/doodad-labs/malicious-ip-addresses/main/data.json) | `https://cdn.statically.io/gh/doodad-labs/malicious-ip-addresses/main/data.json`
+GitHack | [Hyper Link](https://raw.githack.com/doodad-labs/malicious-ip-addresses/main/data.json) | `https://raw.githack.com/doodad-labs/malicious-ip-addresses/main/data.json`
