@@ -1,0 +1,39 @@
+name: Update README with data stats
+
+on:
+  push:
+    paths:
+      - 'data.json'
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Update README
+        run: |
+          # Count items in data.json
+          COUNT=$(jq 'length' data.json)
+          
+          # Read README and update count
+          if grep -q "<!-- DATA_COUNT_START -->" README.md && grep -q "<!-- DATA_COUNT_END -->" README.md; then
+            # Create updated section
+            UPDATED_SECTION="<!-- DATA_COUNT_START -->\n## Data Statistics\n\n**Total items:** $COUNT\n\n*Last updated: $(date '+%Y-%m-%d')*\n<!-- DATA_COUNT_END -->"
+            
+            # Use sed to replace between markers
+            sed -i "/<!-- DATA_COUNT_START -->/,/<!-- DATA_COUNT_END -->/c\\$UPDATED_SECTION" README.md
+          else
+            # Append if markers don't exist
+            echo -e "\n\n<!-- DATA_COUNT_START -->\n## Data Statistics\n\n**Total items:** $COUNT\n\n*Last updated: $(date '+%Y-%m-%d')*\n<!-- DATA_COUNT_END -->" >> README.md
+          fi
+          
+          # Commit and push
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update README with latest data count: $COUNT items" && git push)
