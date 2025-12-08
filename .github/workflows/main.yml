@@ -17,19 +17,26 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
 
       - name: Update README
-        run: node .github/scripts/update-readme.js
-
-      - name: Commit and push changes
         run: |
+          # Count items in data.json
+          COUNT=$(jq 'length' data.json)
+          
+          # Read README and update count
+          if grep -q "<!-- DATA_COUNT_START -->" README.md && grep -q "<!-- DATA_COUNT_END -->" README.md; then
+            # Create updated section
+            UPDATED_SECTION="<!-- DATA_COUNT_START -->\n## Data Statistics\n\n**Total items:** $COUNT\n\n*Last updated: $(date '+%Y-%m-%d')*\n<!-- DATA_COUNT_END -->"
+            
+            # Use sed to replace between markers
+            sed -i "/<!-- DATA_COUNT_START -->/,/<!-- DATA_COUNT_END -->/c\\$UPDATED_SECTION" README.md
+          else
+            # Append if markers don't exist
+            echo -e "\n\n<!-- DATA_COUNT_START -->\n## Data Statistics\n\n**Total items:** $COUNT\n\n*Last updated: $(date '+%Y-%m-%d')*\n<!-- DATA_COUNT_END -->" >> README.md
+          fi
+          
+          # Commit and push
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update README with latest data count" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update README with latest data count: $COUNT items" && git push)
