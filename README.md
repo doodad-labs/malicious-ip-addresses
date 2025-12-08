@@ -18,4 +18,9 @@ Statically | [`https://cdn.statically.io/gh/doodad-labs/malicious-ip-addresses/m
 GitHack | [`https://raw.githack.com/doodad-labs/malicious-ip-addresses/main/data.json`](https://raw.githack.com/doodad-labs/malicious-ip-addresses/main/data.json)
 
 <!-- DATA_COUNT_START -->
+## Data Statistics
+
+**Total items:** 1665
+
+*Last updated: 2025-12-08*
 <!-- DATA_COUNT_END -->
