@@ -1,4 +1,4 @@
-{"ips": [
+[
   "0.1.116.41",
   "0.114.58.220",
   "0.149.126.98",
@@ -2964,4 +2964,4 @@
   "Fetching page 1...",
   "Fetching page 2...",
   "Fetching page 3..."
-], "total_unique": 2965, "last_updated": "2025-12-09T16:21:54Z"}
+]
