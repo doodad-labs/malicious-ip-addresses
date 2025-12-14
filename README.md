@@ -21,7 +21,7 @@ GitHack | [`https://raw.githack.com/doodad-labs/malicious-ip-addresses/main/data
 <!-- DATA_COUNT_START -->
 ## Data Statistics
 
-**Total items:** 3650
+**Total items:** 3652
 
-*Last updated: 2025-12-13*
+*Last updated: 2025-12-14*
 <!-- DATA_COUNT_END -->
